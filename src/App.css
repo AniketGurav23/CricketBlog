@@ -1,0 +1,332 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header styles */
+.site-header {
+  background-color: #f8f9fa;
+  padding: 10px 0;
+}
+
+.site-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-top: -20px;
+}
+
+.site-title1 {
+  font-size: 16px;
+  font-weight: normal;
+  margin-top: -20px;
+}
+
+.site-navigation ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.site-navigation ul li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+.site-navigation ul li {
+  display: inline;
+  margin-right: 60px;
+}
+
+
+/* Featured Post styles */
+.featured-post {
+  background-color: #343a40;
+  color: #fff;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.featured-post h2 {
+  font-size: 30px;
+}
+
+.featured-post p {
+  font-size: 16px;
+}
+
+.featured-post a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+/* Blog Post styles */
+.blog-posts .post {
+  margin-bottom: 40px;
+}
+
+.blog-posts .post h3 {
+  font-size: 24px;
+  color: #343a40;
+}
+
+.blog-posts .post-date {
+  color: #6c757d;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* Sidebar styles */
+.sidebar {
+  margin-left: 20px;
+}
+
+.sidebar section {
+  margin-bottom: 20px;
+}
+
+.sidebar h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 5px;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+/* Layout styles */
+.main-content {
+  display: flex;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+/* .left-content,
+.center-content,
+.right-content {
+    flex: 1;
+} */
+
+.center-title {
+    text-align: center;
+}
+
+.search-input {
+  padding: 5px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-icon {
+  font-size: 20px;
+  margin-right: 15px; 
+  cursor: pointer;
+}
+
+.sign-up-button {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.sign-up-button:hover {
+  background-color: #0056b3;
+}
+
+hr {
+  margin: 10px 0;
+  border: none;
+  border-top: 2px solid #000;
+}
+
+/* Container for cards */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px; 
+  justify-content: center; 
+}
+
+/* Individual card styling */
+.card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: calc(50% - 16px); 
+  max-width: calc(50% - 16px); 
+  flex: 1;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+/* Card content styling */
+.card-content {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+/* Card text section */
+.card-text {
+  flex: 1;
+  padding: 15px;
+}
+
+/* Card image section */
+.card-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+.card-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Card text */
+.card-title {
+  margin: 0 0 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card-description {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .card {
+      width: calc(100% - 16px); 
+      max-width: calc(100% - 16px); 
+      flex-direction: column; 
+  }
+
+  .card-content {
+      flex-direction: column;
+  }
+
+  .card-image {
+      order: -1; 
+  }
+}
+
+
+
+
+.about {
+  background-color: #b5babd;
+}
+
+/* Form Container */
+form {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-left: 25px;
+}
+
+/* Form Elements */
+form input[type="text"],
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  font-family: 'Arial', sans-serif;
+}
+
+form input[type="text"]:focus,
+form textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Textarea */
+form textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+/* Submit Button */
+form button[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 18px;
+  font-family: 'Arial', sans-serif;
+  cursor: pointer;
+}
+
+form button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  form {
+    padding: 15px;
+  }
+
+  form button[type="submit"] {
+    font-size: 16px;
+  }
+}
+
+
+
+
+
+@media (max-width: 400px) {
+  .main-content {
+      flex-direction: column;
+  }
+
+  .sidebar {
+      margin-left: 0;
+  }
+}
